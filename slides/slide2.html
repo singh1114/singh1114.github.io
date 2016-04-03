@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Project 1 Presentation</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Showing various views of the table which include</h3>
+					<ul>
+						<li>Top View</li>
+						<li>Front view</li>
+						<li>Side view</li>
+						<li>Bottom view</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Single page structure</h1>
+					<p>Single page structure is made so that the user can see the various views on a single page just by clicking on some buttons.</p>
+				</section>
+				<section>
+					<h1>Receiving values</h1>
+					<p>Values are received by making use of 6 Text Fields which are shown one at a time.</p>
+				</section>
+				<section>
+					<h3>Drawings</h3>
+					<p>All drawings are made with the help of one canvas. Each time the user clicks on a button to show a view, canvas is cleared and then drawings are made.</p>
+					<h3>Code for clear function</h3>
+					<pre><code>
+	function canvasclear(){
+	context.clearRect(0,0,600,450);
+	}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Bootstrap</h2>
+					<p>Little bit Bootstrap is used to make layout of the page and for designing buttons and text-fields.</p>
+				</section>
+				<section>
+					<h2>Reseting values</h2>
+					<p>Once the values are given and the user wants to change them, then he can click on the reset button to change. The button is only visible when all the values are given by the user.</p>
+				</section>
+				<section>
+					<h2>Query selector all</h2>
+					<p>This is the javaScript method used to put all the elemets of the same type inside a container, into an array.</p>
+				</section>
+				<section>
+					<h2>Number of legs</h2>
+					<p>The user can also give the number of legs. The length between the legs are calculated by using the formula.</p>
+					<pre><code>
+length_legs_dist = (total - (length_legs*values[5]))/(length_legs+1);
+					</code></pre>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
