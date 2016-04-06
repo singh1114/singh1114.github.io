@@ -1,0 +1,326 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	text-align:center;
+	font-family: Ubuntu; 
+}
+#big_wrapper{
+	width:100%;
+	height:auto;
+}
+header{
+	width:100%;
+	position:fixed;
+	z-index:10;
+	background:white;
+	border-bottom: 1px solid #aaa7a2;
+}
+#head_content{
+	width:33%;
+	text-align:left;
+	float:left;
+}
+
+#main_head{
+	width:100%;
+	margin:0px;
+	padding:4px;
+}
+#main_head h1{
+	font: 60px Ubuntu;
+	text-align:center;
+	color:#0f9d58;
+}
+#main_head #for_smaller{
+	display:none;
+}
+#nav_content{
+	width:67%;
+	float:right;
+}	
+#nav_content #main_nav{
+	float:right;
+	text-align:right;
+	width:100%;
+}
+#nav_content #main_nav ul{
+	text-align:right;
+}
+#nav_content #main_nav li{
+	display:inline;
+	padding:20px;
+	text-align:right;
+	margin-left:10px;	
+	line-height: 81px;
+}
+#nav_content #main_nav a{
+	text-decoration:none;
+	font:bold 20px Ubuntu;
+	color:#0f9d58;
+	padding-top:7px;
+	padding-left:14px; 
+	padding-right:14px; 
+	padding-bottom:7px;
+}
+#nav_content #main_nav a:hover{
+	background:#0f9d58;
+	color:white;
+	border-radius:10px;
+}
+
+#below_header{
+	width:100%;
+	position: absolute;
+	top:81px;
+}
+#left_empty{
+	width:7%;
+	height:100px;
+	float:left;
+}
+#right_empty{
+	width:7%;
+	height:100px;
+	float:left;
+}
+section{
+	width:65%;
+	float:left;
+}
+#main_content{
+	margin:1%;
+	padding:1%;
+}
+#content_header{
+	text-decoration:none; 
+	text-align:left;
+	color:#0f9d58;
+	padding-bottom:2%;
+	margin-top:3%;
+}
+#content_header h1{
+	font: 35px Ubuntu;
+}
+#content_header:hover{
+	text-decoration: underline;
+}
+#content_body{
+	text-align:left;
+}
+#content_body p{
+	font:120% Ubuntu;
+	margin-top:4%;	
+}
+
+aside{
+	width:21%;
+	float:left;
+}
+#right_bar{
+	width:100%;
+	margin-top:18%;
+	border:1px solid #aaa7a2;
+}
+#right_content{
+	padding:4%;
+	margin: 2%;
+	font-family: ubuntu;
+}
+footer{
+	width:100%;
+	clear:both;
+	margin-top:100%;
+	position:relative;
+}
+img {
+	width:100%;
+	height:auto;
+	margin-top:3%;
+}
+#footer_content{
+	color:#0f9d58;
+	background:white;
+	border-top: 1px solid #aaa7a2;
+	font: 10px sans-serif;
+}
+@media only screen and (max-width:1220px){
+	#main_head{
+		width:100%;
+		margin:0px;
+		padding:2px;
+	}
+	#main_head h1{
+		font: 300% sans-serif;
+		text-align:center;
+		color:#0f9d58;
+	}
+	
+	#nav_content #main_nav li{
+		padding:2px;
+		margin-left:10px;	
+		line-height: 62px;
+	}
+	#left_empty{
+		width:5%;
+	}
+	#below_header{
+		top:62px;
+	}
+	#right_empty{
+		width:5%;
+	}
+	section{
+		width:67%;
+	}
+	aside{
+		width:23%;
+	}
+	#content_header{
+		font: bold 200% sans-serif; 
+	}
+	#content_body p{
+		font:100% sans-serif;
+		margin-top:4%;	
+	}
+	#footer_content{
+		font: 60% sans-serif;
+	}
+	
+}
+@media only screen and (max-width:970px){
+	#main_head{
+		width:100%;
+		margin:0px;
+		padding:2px;
+	}
+	#head_content{
+		width:100%;
+		border-bottom: 1px solid #aaa7a2;
+	}	
+	#main_head h1{
+		font: 300% Ubuntu;
+		text-align:right;
+		margin-right:20px;
+	}
+	#nav_content{
+		width:100%;
+	}
+	#nav_content #main_nav ul{
+	text-align:left;
+}
+#nav_content #main_nav li{
+	padding:5px;
+	margin-left:10px;
+}
+#nav_content #main_nav a{
+	padding-top:5px;
+	padding-left:12px; 
+	padding-right:12px; 
+	padding-bottom:5px;	
+}
+	#below_header{
+	top:126px;
+}
+#left_empty{
+	width:3%;
+}
+	#right_empty{
+		width:3%;
+	}
+	section{
+		width:67%;
+	}
+	aside{
+		width:25%;
+	}
+	#content_header{
+		font: 170% Ubuntu; 
+		padding-bottom:.5%;
+	  margin-top:1%;
+	}
+}
+@media only screen and (max-width:600px){
+	body{
+		background:white;
+	}
+	header{
+		background:white;
+		border:none;
+		position:relative;
+	}
+	#head_content{
+		position:fixed;
+		z-index:10;
+		background:white;
+	}
+		#main_head h1{
+		text-align:left;
+		margin-left:10px;
+	}
+	#main_nav{
+		top:60px;
+		position:relative;
+	}
+	#main_nav:hover{
+		color:white;
+	}
+	#nav_content #main_nav li{
+	display:block;
+	text-align:center;	
+	margin:0px;
+		padding:0px;
+		border-bottom:1px solid #aaa7a2;
+		line-height: 45px;
+		background:white;
+	}
+	#nav_content #main_nav a{
+		color: #0f9d58;
+	}
+	#nav_content #main_nav li:hover{
+		color : white;
+		background : white;
+	}
+		#nav_content #main_nav a:hover{
+			color:white;
+			width:100%;
+		}
+	#below_header{
+		top:291px;
+	}
+	#left_empty{
+	width:5%;
+}
+	#right_empty{
+		width:5%;
+	}
+	section{
+		width:90%;
+		margin-bottom:0px;
+		position:relative;
+	}
+	aside{
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+		text-align:left;
+		margin-top:-10%;
+		position:relative;
+	}
+	#right_content{
+	padding:2.5%;
+	margin:0%;
+	font-family: ubuntu;
+}
+
+	
+}
+@media only screen and (max-width:400px){
+	#main_head h1{
+	display:none;
+}
+#main_head #for_smaller{
+	display:block;
+}
+}
