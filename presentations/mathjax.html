@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>presentation3</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>MathJax</h1><hr/>
+					<h4>According ot the official website, Mathjax is used to </h4><hr/><br/>
+					<ul>
+						<li>show mathematical formulas in the browser</li>
+						<li>No need for the reader to make the extra setup.</li>
+						<li>Use MathML, TeX and ASCIImath as input and produce HTML+CSS format.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Earlier trend</h1><hr/>
+					<h4>Plain text was used to represent formulas which made the structure look bad on some screens</h4><hr/>
+					<h4>Mathematical formulas were also represented in the form of images.</h4><hr/>
+					<h4>Visually impared people can't know what's written on the screen with their screen reader softwares</h4><hr/>
+					<h4>To solve these problems MathJax was created.</h4><hr/>
+				</section>
+				<section>
+					<h1>What is MathJax?</h1><hr/>
+					<h4>It is a javascript library that let us embed mathematical formulas into the browser.</h4><hr/>
+					<h4>It can work with Tex, LaTex or MathML to write formulas.</h4><hr/>
+				</section>
+				<section>
+					<h1>Implemetation</h1><hr/>
+					<h4>It can be Implemented in two ways.</h4><hr/>
+					<ol>
+						<li>The most common and easier is to link to the public installation available at the MathJax CDN. </li>
+						<li>Downloading and Installing for personal use and development.</li>
+					</ol>
+				</section>
+				<section>
+					<h1>CDN Implementation</h1>
+				</section>
+				<section>
+					<h1>repository cloning</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
