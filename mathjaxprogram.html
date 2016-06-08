@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- ONLY FOR DESIGN Purpose -->
+	<meta charset="utf-8"/>
+	<meta content='width=device-width, initial-scale=1' name='viewport'/>
+	<title>Projects</title>
+	<style>
+	</style>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Design purpose files ends here-->
+
+	<!-- For implementing Mathematical FOrmulas -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Right click to open page source</h1>
+				<h1>Tex IMPLEMENTATION</h1>
+				<div style="border: 2px solid grey">
+					When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+					$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+				</div>
+
+				<h1>LaTex IMPLEMENTATION</h1>
+				<div style="border: 2px solid grey">
+					\begin{array}{*{20}c} {x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}}} & {{\rm{when}}} & {ax^2 + bx + c = 0} \\ \end{array}
+				</div>
+
+				<h1>MathMl IMPLEMENTATION</h1>
+				<div style="border: 2px solid grey">
+					When
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+					  <mi>a</mi><mo>&#x2260;</mo><mn>0</mn>
+					</math>,
+					there are two solutions to
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+					  <mi>a</mi><msup><mi>x</mi><mn>2</mn></msup>
+					  <mo>+</mo> <mi>b</mi><mi>x</mi>
+					  <mo>+</mo> <mi>c</mi> <mo>=</mo> <mn>0</mn>
+					</math>
+					and they are
+					<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+					  <mi>x</mi> <mo>=</mo>
+					  <mrow>
+					    <mfrac>
+					      <mrow>
+					        <mo>&#x2212;</mo>
+					        <mi>b</mi>
+					        <mo>&#x00B1;</mo>
+					        <msqrt>
+					          <msup><mi>b</mi><mn>2</mn></msup>
+					          <mo>&#x2212;</mo>
+					          <mn>4</mn><mi>a</mi><mi>c</mi>
+					        </msqrt>
+					      </mrow>
+					      <mrow> <mn>2</mn><mi>a</mi> </mrow>
+					    </mfrac>
+					  </mrow>
+					  <mtext>.</mtext>
+					</math>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
