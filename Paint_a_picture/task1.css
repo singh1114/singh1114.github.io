@@ -1,0 +1,81 @@
+*{
+	margin :0px;
+	padding:0px;
+}
+#text{
+	width:100px;
+}
+#color-choose{
+	float:left;
+
+}
+#color-choose div{
+	width:50px;
+	height:50px;
+	margin: 5px 0px 5px 0px;
+}
+#color-1{
+	background : red;
+}
+#color-2{
+	background : green;
+}
+#color-3{
+	background : black;
+}
+#color-4{
+	background : blue;
+}
+#Image{
+	width:800px;
+	height:500px;
+	background:grey;
+	margin:50px 0px 0px 200px;
+}
+#grass{
+	width: 800px;
+	height:150px;
+	margin: -150px 0px 0px 200px;
+	position: absolute;
+	background: red;
+}
+#sun{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	background:white;
+	position: absolute;
+	margin: -450px 100px 0px 800px;
+}
+#building{
+	width:100px;
+	height:200px;
+	background: green;
+	position: absolute;
+	margin: -350px 0px 0px 545px;
+}
+#windows div:nth-child(odd){
+	background:black;
+	width:25px;
+	height:35px;
+	position: relative;
+	margin:0px 0px 10px 10px;
+}
+#windows{
+	margin:-340px 0px 0px 550px;
+}
+#windows div:nth-child(even){
+	background:black;
+	width:25px;
+	height:35px;
+	position: absolute;
+	margin:-45px 0px 10px 55px;
+
+}
+#door{
+	background:black;
+	width:35px;
+	height:55px;
+	position: relative;
+	margin:10px 0px 10px 580px;
+}
