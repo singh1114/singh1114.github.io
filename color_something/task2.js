@@ -20,7 +20,7 @@ iDiv.className = 'block';
 document.getElementsByTagName('body')[0].appendChild(iDiv);
 var a = [];
 for(var j=1;j<=35;j++){
-	for(var i=1;i<=35;i++){
+	for(var i=1;i<=30;i++){
 		a[i] = document.createElement('div');
 		a[i].className = "blah"+j+i;
 		a[i].id = "blah"+j+i;
