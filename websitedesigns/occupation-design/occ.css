@@ -1,0 +1,104 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:sans-serif;
+}
+body{
+	background-image:url("home.jpg");
+	height:cover;
+	width:100%;
+}
+.col-md-12 header {
+	width:100%;
+	height:58px;
+	background:blue;
+}
+header .col-md-3{
+	font-size:48px;
+	font-family:sans-serif;
+	float:left;
+	margin:5px 10px 5px 10px;
+}
+header .col-md-9{
+	float:right;
+}
+header li{
+	text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 58px;
+    font-size: 24px;
+}
+header li:hover{
+	border-bottom: 2px solid red;
+}
+#cover-it{
+	width:100%;
+	height:91vh;
+	text-align:center;
+}
+#cover-it button{
+	width:15%;
+	height:7vh;
+	margin:40vh 15% 0px -100px;
+	border-radius:5%;
+	background: blue;
+	border:2px solid blue;
+	font-size:16px;
+}
+#cover-it button:hover{
+	width:17%;
+	height:8vh;
+	background: red;
+}
+#others{
+	background: grey;
+	width:100%;
+	height: 115vh;
+}
+#others div:nth-child(even){
+	float:left;
+	width:35%;
+	height:50vh;
+	margin: 3vh 20px 0px 20px;
+	background:wheat;
+	border-radius: 50%;
+	text-align:center;
+}
+#others div:nth-child(odd){
+	float:right;
+	width:35%;
+	height:50vh;
+	margin: 3vh 20px 0px 20px;
+	background:wheat;
+	border-radius: 50%;	
+	text-align:center;
+}
+#others p {
+	padding-top:24vh;
+	font-size:24px;
+}
+footer{
+	background: #333;
+	color:white;
+	padding: 5px 0px 5px 10px ;
+}
+@media only screen and (max-width:700px){
+	.col-md-12 header{
+		height:112px;
+	}
+	header .col-md-9{
+	float:left;
+	}
+	#others div:nth-child(1n+0){
+		float:none;
+		width : 90%;
+		margin:5% 5% 5% 5%;
+	}
+	#others{
+		height:auto;
+	}
+	#others p {
+		margin-top:10%;
+	}
+}
